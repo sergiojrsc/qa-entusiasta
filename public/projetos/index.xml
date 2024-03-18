@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projetos on QA Entusiasta</title>
+    <link>https://sergiojrsc.github.io/qa-entusiasta/projetos/index.html</link>
+    <description>Recent content in Projetos on QA Entusiasta</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Mar 2024 09:24:47 -0300</lastBuildDate>
+    <atom:link href="https://sergiojrsc.github.io/qa-entusiasta/projetos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automação da aplicação Swag Lab</title>
+      <link>https://sergiojrsc.github.io/qa-entusiasta/projetos/swaglabs/index.html</link>
+      <pubDate>Mon, 18 Mar 2024 09:24:47 -0300</pubDate>
+      <guid>https://sergiojrsc.github.io/qa-entusiasta/projetos/swaglabs/index.html</guid>
+      <description>Este projeto tem como objetivo demonstrar meu conhecimento em testes automatizados e ficar como uma documentação do que estou aprendendo.
+Escolhi automatizar o Swag Labs, por ser um aplicação web que possui várias funcionalidades básicas e que já iria proporcionar explorar um conhecimento muito interessante.
+Porém o que mais me chamou a atenção, é conseguir fazer exemplos de cenários onde passando apenas um usuário diferente, consigo demonstrar o mesmo teste passando e quebrando, com isso já validando os cenários automatizados, sem ter que fazer manipulação no código para validar.</description>
+    </item>
+  </channel>
+</rss>

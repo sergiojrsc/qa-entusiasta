@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.122.0">
+    <meta name="generator" content="Relearn 5.26.1+tip">
+    <meta name="description" content="">
+    <meta name="author" content="Sérgio Junior Schmitt">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="CodeceptJS - QA Entusiasta">
+    <meta name="twitter:description" content="Breve descrição sobre CodeceptJS O CodeceptJS é um framework de teste de aceitação e de sistema end-to-end para JavaScript. Ele é projetado para simplificar a escrita e execução de testes automatizados para aplicativos da web, especialmente para aplicativos baseados em navegadores.
+Para acessar a pagina inicial click no link
+E vou utilizar a versão webdriverIO do codeceptjs, para acessar a doc click no link
+Pré requisitos Ter o node instalado Utilizei a versão v20.">
+    <meta property="og:title" content="CodeceptJS - QA Entusiasta">
+    <meta property="og:description" content="Breve descrição sobre CodeceptJS O CodeceptJS é um framework de teste de aceitação e de sistema end-to-end para JavaScript. Ele é projetado para simplificar a escrita e execução de testes automatizados para aplicativos da web, especialmente para aplicativos baseados em navegadores.
+Para acessar a pagina inicial click no link
+E vou utilizar a versão webdriverIO do codeceptjs, para acessar a doc click no link
+Pré requisitos Ter o node instalado Utilizei a versão v20.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sergiojrsc.github.io/qa-entusiasta/projetos/swaglabs/codeceptjs/index.html">
+    <meta property="article:section" content="Automação da aplicação Swag Lab - QA Entusiasta">
+    <meta property="og:site_name" content="QA Entusiasta">
+    <title>CodeceptJS - QA Entusiasta</title><link rel="icon" href="./images/icon.svg" type="image/svg">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/qa-entusiasta/css/fontawesome-all.min.css?1710786940" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qa-entusiasta/css/fontawesome-all.min.css?1710786940" rel="stylesheet"></noscript>
+    <link href="/qa-entusiasta/css/nucleus.css?1710786940" rel="stylesheet">
+    <link href="/qa-entusiasta/css/auto-complete.css?1710786940" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qa-entusiasta/css/auto-complete.css?1710786940" rel="stylesheet"></noscript>
+    <link href="/qa-entusiasta/css/perfect-scrollbar.min.css?1710786940" rel="stylesheet">
+    <link href="/qa-entusiasta/css/fonts.css?1710786940" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qa-entusiasta/css/fonts.css?1710786940" rel="stylesheet"></noscript>
+    <link href="/qa-entusiasta/css/theme.css?1710786940" rel="stylesheet">
+    <link href="/qa-entusiasta/css/theme-zen-light.css?1710786940" rel="stylesheet" id="R-variant-style">
+    <link href="/qa-entusiasta/css/chroma-relearn-light.css?1710786940" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/qa-entusiasta/css/variant.css?1710786940" rel="stylesheet">
+    <link href="/qa-entusiasta/css/print.css?1710786940" rel="stylesheet" media="print">
+    <link href="/qa-entusiasta/css/ie.css?1710786940" rel="stylesheet">
+    <script src="/qa-entusiasta/js/url.js?1710786940"></script>
+    <script src="/qa-entusiasta/js/variant.js?1710786940"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.baseUri='..\/..\/..';
+      window.relearn.baseUriFull='https:\/\/sergiojrsc.github.io\/qa-entusiasta';
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'zen-light', 'zen-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/qa-entusiasta/projetos/swaglabs/codeceptjs/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#breve-descrição-sobre-codeceptjs">Breve descrição sobre CodeceptJS</a></li>
+    <li><a href="#pré-requisitos">Pré requisitos</a></li>
+    <li><a href="#passos-da-configuração">Passos da configuração</a>
+      <ul>
+        <li><a href="#primeiro-passo-executar-o-comando-npm-init--y-para-criar-o-arquivo-packagejson">Primeiro passo executar o comando <code>npm init -y</code> para criar o arquivo package.json</a></li>
+        <li><a href="#segundo-passo-executar-o-comando-npm-i-codeceptjs3512--d-para-instalar-as-dependências">Segundo passo executar o comando <code>npm i codeceptjs@3.5.12 -D</code> para instalar as dependências</a></li>
+        <li><a href="#terceiro-passo-executar-o-comando-npm-i-webdriverio8320--d-para-instalar-as-dependências">Terceiro passo executar o comando <code>npm i webdriverio@8.32.0 -D</code> para instalar as dependências</a></li>
+        <li><a href="#quarto-passo-executar-o-comando-npx-codeceptjs-init-para-criar-a-configuração-inicial">Quarto passo executar o comando <code>npx codeceptjs init</code> para criar a configuração inicial</a></li>
+        <li><a href="#quinto-passo-criando-o-primeiro-cenário-de-teste-fazer-o-login-no-sistema">Quinto passo criando o primeiro cenário de teste fazer o login no sistema</a></li>
+      </ul>
+    </li>
+    <li><a href="#breve-descrição-dos-comandos-do-codecept-que-foram-utilizados">Breve descrição dos comandos do codecept que foram utilizados</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/qa-entusiasta/projetos/index.html"><span itemprop="name">Projetos</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/qa-entusiasta/projetos/swaglabs/index.html"><span itemprop="name">Automação da aplicação Swag Lab</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">CodeceptJS</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/qa-entusiasta/projetos/swaglabs/index.html" title="Automação da aplicação Swag Lab (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/qa-entusiasta/projetos/swaglabs/git/index.html" title="Git (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="codeceptjs">CodeceptJS</h1>
+
+<h2 id="breve-descrição-sobre-codeceptjs">Breve descrição sobre CodeceptJS</h2>
+<p>O CodeceptJS é um framework de teste de aceitação e de sistema end-to-end para JavaScript. Ele é projetado para simplificar a escrita e execução de testes automatizados para aplicativos da web, especialmente para aplicativos baseados em navegadores.</p>
+<p>Para acessar a pagina inicial click no <a href="https://codecept.io/" target="_blank">link</a></p>
+<p>E vou utilizar a versão webdriverIO do codeceptjs, para acessar a doc click no <a href="https://codecept.io/helpers/WebDriver/#webdriver" target="_blank">link</a></p>
+<h2 id="pré-requisitos">Pré requisitos</h2>
+<ul>
+<li>Ter o node instalado
+<ul>
+<li>Utilizei a versão v20.11.0 do windows</li>
+<li>Para baixar a versão click no <a href="https://nodejs.org/dist/v20.11.0/" target="_blank">link</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="passos-da-configuração">Passos da configuração</h2>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Primeiro passo executar o comando <code>npm init -y</code> para criar o arquivo package.json</li>
+<li><input checked="" disabled="" type="checkbox"> Segundo passo executar o comando <code>npm i codeceptjs@3.5.12 -D</code> para instalar as dependências</li>
+<li><input checked="" disabled="" type="checkbox"> Terceiro passo executar o comando <code>npm i webdriverio@8.32.0 -D</code> para instalar as dependências</li>
+<li><input checked="" disabled="" type="checkbox"> Quarto passo executar o comando <code>npx codeceptjs init</code> para criar a configuração inicial</li>
+<li><input checked="" disabled="" type="checkbox"> Quinto passo criando o primeiro cenário de teste fazer o login no sistema</li>
+</ul>
+<p>Logo abaixo mais detalhes sobre a execução de cada passo.</p>
+<h3 id="primeiro-passo-executar-o-comando-npm-init--y-para-criar-o-arquivo-packagejson">Primeiro passo executar o comando <code>npm init -y</code> para criar o arquivo package.json</h3>
+<ul>
+<li>
+<p>O comando <code>npm init -y</code> é uma forma abreviada e automatizada de iniciar um novo projeto Node.js e criar um arquivo package.json sem ter que responder a uma série de perguntas interativas.</p>
+<p>Aqui está o que cada parte do comando significa:</p>
+<ul>
+<li>npm: O Node Package Manager, usado para instalar e gerenciar pacotes em projetos Node.js.</li>
+<li>init: Comando para inicializar um novo projeto Node.js.</li>
+<li>-y: Uma opção que significa &ldquo;sim&rdquo; ou &ldquo;yes&rdquo;, que responde automaticamente a todas as perguntas com os valores padrão, sem a necessidade de entrada do usuário.</li>
+</ul>
+<div class="highlight wrap-code"><pre tabindex="0"><code>npm init -y</code></pre></div></li>
+<li>
+<p>Assim que o arquivo <code>packge.json</code> foi criado eu abri o arquivo e alterei as seguintes informações:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>&#34;author&#34;: &#34;Sérgio Junior Schmitt&#34;,</code></pre></div></li>
+</ul>
+<h3 id="segundo-passo-executar-o-comando-npm-i-codeceptjs3512--d-para-instalar-as-dependências">Segundo passo executar o comando <code>npm i codeceptjs@3.5.12 -D</code> para instalar as dependências</h3>
+<ul>
+<li>
+<p>O comando npm i <a href="mailto:codeceptjs@3.5.12" target="_blank">codeceptjs@3.5.12</a> -D é usado para instalar o CodeceptJS na versão específica 3.5.12 como uma dependência de desenvolvimento em um projeto Node.js.</p>
+<p>Aqui está o que cada parte do comando significa:</p>
+<ul>
+<li>npm: O Node Package Manager, usado para instalar e gerenciar pacotes em projetos Node.js.</li>
+<li>i (ou install): Comando para instalar pacotes.</li>
+<li><a href="mailto:codeceptjs@3.5.12" target="_blank">codeceptjs@3.5.12</a>: O nome do pacote (CodeceptJS) seguido pela versão específica (3.5.12) que você deseja instalar.</li>
+<li>-D (ou &ndash;save-dev): Opção para instalar o pacote como uma dependência de desenvolvimento, o que significa que ele será listado no arquivo package.json sob a chave devDependencies.</li>
+</ul>
+<p>Portanto, ao executar esse comando, o npm irá baixar e instalar o CodeceptJS na versão 3.5.12 no seu projeto, adicionando-o ao seu arquivo package.json como uma dependência de desenvolvimento. Isso é útil quando você está trabalhando em um projeto que utiliza o CodeceptJS para testes automatizados e deseja garantir que todas as pessoas que colaboram no projeto usem a mesma versão do CodeceptJS.</p>
+<p>Assim que terminou de fazer a instalação criei o arquivo <code>.gitignore </code> e dentro deste arquivo coloquei o nome da pasta <code>node_modules</code> para sempre que eu for atualizar o projeto essa pasta não ir, pois ela é muito grande e não faz sentido ficar armazenado no git</p>
+</li>
+</ul>
+<h3 id="terceiro-passo-executar-o-comando-npm-i-webdriverio8320--d-para-instalar-as-dependências">Terceiro passo executar o comando <code>npm i webdriverio@8.32.0 -D</code> para instalar as dependências</h3>
+<ul>
+<li>
+<p>O comando npm i <a href="mailto:webdriverio@8.32.0" target="_blank">webdriverio@8.32.0</a> -D é utilizado para instalar o WebdriverIO na versão específica 8.32.0 como uma dependência de desenvolvimento em um projeto Node.js. Aqui está o que cada parte do comando significa:</p>
+<ul>
+<li>npm: O Node Package Manager, utilizado para instalar e gerenciar pacotes em projetos Node.js.</li>
+<li>i (ou install): Comando para instalar pacotes.</li>
+<li><a href="mailto:webdriverio@8.32.0" target="_blank">webdriverio@8.32.0</a>: O nome do pacote (WebdriverIO) seguido pela versão específica (8.32.0) que você deseja instalar.</li>
+<li>-D (ou &ndash;save-dev): Opção para instalar o pacote como uma dependência de desenvolvimento, o que significa que ele será listado no arquivo package.json sob a chave devDependencies.</li>
+</ul>
+</li>
+</ul>
+<h3 id="quarto-passo-executar-o-comando-npx-codeceptjs-init-para-criar-a-configuração-inicial">Quarto passo executar o comando <code>npx codeceptjs init</code> para criar a configuração inicial</h3>
+<ul>
+<li>Comando para iniciar as configurações básicas, com isso será feito alguns questionamentos <code>npx codeceptjs init</code> que irá criar a estrutura inicial do projeto de teste, segue as respostas utilizadas nesse projeto:
+<ul>
+<li>Do you plan to write tests in TypeScript?: <code>N</code></li>
+<li>Where are your tests located? (./*_test.js): <code>Enter</code></li>
+<li>What helpers do you want to use? (Use arrow keys): Selecionar o WebDriver <code>Enter</code></li>
+<li>Where should logs, screenshots, and reports to be stored? (./output): <code>Enter</code></li>
+<li>English (no localization): Selecionar pt-BR caso queira em Portuguese Brasil <code>Enter</code></li>
+<li>[WebDriver] Base url of site to be tested <a href="https://www.saucedemo.com/v1/" target="_blank">https://www.saucedemo.com/v1/</a> <code>Enter</code></li>
+<li>[WebDriver] Browser in which testing will be performed (chrome): <code>Enter</code></li>
+<li>Feature which is being tested (ex: account, login, etc): login <code>Enter</code></li>
+<li>Filename of a test (login_test.js): <code>Enter</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="quinto-passo-criando-o-primeiro-cenário-de-teste-fazer-o-login-no-sistema">Quinto passo criando o primeiro cenário de teste fazer o login no sistema</h3>
+<p>No arquivo <code>login_test.js</code> será adicionado o cenário de login usando a maneira mais simples do codeceptjs para fazer uma automação.</p>
+<p>Assim que terminei de criar os cenários, executei o comando <code>npx codeceptjs run</code> para verificar se os testes foram executados sem problema.</p>
+<p>Com isso verifiquei que foi criado a pasta <code>output</code>, esta é outra pasta que adiciono no arquivo <code>.gitignore</code>, pois não vejo necessidade de ser enviado essa pasta para o repositório do git</p>
+<h2 id="breve-descrição-dos-comandos-do-codecept-que-foram-utilizados">Breve descrição dos comandos do codecept que foram utilizados</h2>
+<ul>
+<li>
+<p>Aqui vou fazer uma breve descrição do que cada comando que está sendo utilizado faz, para quem se interessar em aprofundar mais sobre cada comando procurar pelo mesmo na documentação oficial do webdriver que esta no <a href="https://codecept.io/helpers/WebDriver/" target="_blank">link</a></p>
+<ul>
+<li>Esse comando tem a finalidade de navegar para uma determinada página da web durante a execução do teste.
+No exemplo fornecido, <code>EU.amOnPage('/')</code>, o parâmetro <code>('/')</code> indica que o teste está navegando para a raiz do site, ou seja, a página inicial, que foi configurado no arquivo <code>codecept.conf.js</code> no atributo <code>url</code>.
+<div class="highlight wrap-code"><pre tabindex="0"><code>Eu.amOnPage(&#39;/&#39;);</code></pre></div></li>
+<li>Usado para preencher um campo de entrada <code>(input)</code> com um valor específico. Este campo espera que sejam passado dois atributos, o primeiro é o mapeamento do campo da tela que será informado o texto, o segundo é o texto que será inserido nesse campo.
+<div class="highlight wrap-code"><pre tabindex="0"><code>Eu.fillField(&#39;//input[@id=&#34;user-name&#34;]&#39;, &#39;standard_user&#39;);</code></pre></div></li>
+<li>Usado para clicar em um elemento específico da tela, com isso, este comando espera que seja passado apenas um atributo, o atributo que será clicado.
+<div class="highlight wrap-code"><pre tabindex="0"><code>Eu.click(&#39;//input[@id=&#34;login-button&#34;]&#39;);</code></pre></div></li>
+<li>Usado para esperar que um elemento específico apareça na tela.
+<div class="highlight wrap-code"><pre tabindex="0"><code>Eu.waitForElement(&#39;//span[@class=&#34;title&#34;]&#39;)</code></pre></div></li>
+<li>Usado para verificar se o texto fornecido está presente dentro do elemento especificado, com isso passamos dois parâmetros, o primeiro é o texto que esperamos que esteja aparecendo na tela, o segundo é o mapeamento do texto.
+<div class="highlight wrap-code"><pre tabindex="0"><code>Eu.seeTextEquals(&#39;Products&#39;,&#39;//span[@class=&#34;title&#34;]&#39;)</code></pre></div></li>
+</ul>
+</li>
+</ul>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a id="logo" href="/"><img src="./images/logo.png"></a>
+        </div>
+        <div class="searchbox default-animation">
+          <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
+          <label class="a11y-only" for="R-search-by">Search</label>
+          <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+        </div>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/qa-entusiasta/js/auto-complete.js?1710786940" defer></script>
+        <script src="/qa-entusiasta/js/lunr/lunr.min.js?1710786940" defer></script>
+        <script src="/qa-entusiasta/js/lunr/lunr.stemmer.support.min.js?1710786940" defer></script>
+        <script src="/qa-entusiasta/js/lunr/lunr.multi.min.js?1710786940" defer></script>
+        <script src="/qa-entusiasta/js/lunr/lunr.en.min.js?1710786940" defer></script>
+        <script src="/qa-entusiasta/js/search.js?1710786940" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/qa-entusiasta/index.html"><i class="fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/qa-entusiasta/sobre/index.html" class=""><a class="padding" href="/qa-entusiasta/sobre/index.html">Sobre</a></li>
+          <li data-nav-id="/qa-entusiasta/projetos/index.html" class="parent "><input type="checkbox" id="R-section-cd7e3fe05412edb727eb4347db902d79" aria-controls="R-subsections-cd7e3fe05412edb727eb4347db902d79" checked><label for="R-section-cd7e3fe05412edb727eb4347db902d79"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Projetos</span></label><a class="padding" href="/qa-entusiasta/projetos/index.html">Projetos</a><ul id="R-subsections-cd7e3fe05412edb727eb4347db902d79" class="morespace collapsible-menu">
+          <li data-nav-id="/qa-entusiasta/projetos/swaglabs/index.html" class="parent "><input type="checkbox" id="R-section-c823a385e2795a52989742a2003151f4" aria-controls="R-subsections-c823a385e2795a52989742a2003151f4" checked><label for="R-section-c823a385e2795a52989742a2003151f4"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Automação da aplicação Swag Lab</span></label><a class="padding" href="/qa-entusiasta/projetos/swaglabs/index.html">Automação da aplicação Swag Lab</a><ul id="R-subsections-c823a385e2795a52989742a2003151f4" class="morespace collapsible-menu">
+          <li data-nav-id="/qa-entusiasta/projetos/swaglabs/codeceptjs/index.html" class="active"><a class="padding" href="/qa-entusiasta/projetos/swaglabs/codeceptjs/index.html">CodeceptJS</a></li>
+          <li data-nav-id="/qa-entusiasta/projetos/swaglabs/git/index.html" class=""><a class="padding" href="/qa-entusiasta/projetos/swaglabs/git/index.html">Git</a></li></ul></li></ul></li>
+          </ul>
+        </div>
+        <div id="R-shortcuts">
+          <div class="nav-title padding">Links</div>
+          <ul class="space">
+            <li><a class="padding" href="https://www.linkedin.com/in/s%C3%A9rgio-schmitt-33b30248/"><i class='fab fa-linkedin'></i> LinkedIn</a></li>
+            <li><a class="padding" href="https://github.com/sergiojrsc"><i class='fa-fw fab fa-github'></i> GitHub</a></li>
+            <li><a class="padding" href="https://gitlab.com/sergiojrsc"><i class='fab fa-gitlab'></i> GitLab</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-zen-light" value="zen-light" selected>Zen Light</option>
+                      <option id="R-select-variant-zen-dark" value="zen-dark">Zen Dark</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter"><p>Sérgio Junior Schmitt</p>
+
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/qa-entusiasta/js/clipboard.min.js?1710786940" defer></script>
+    <script src="/qa-entusiasta/js/perfect-scrollbar.min.js?1710786940" defer></script>
+    <script src="/qa-entusiasta/js/theme.js?1710786940" defer></script>
+  </body>
+</html>
