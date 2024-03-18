@@ -5,6 +5,6 @@ weight = 2
 +++
 
 
-Segue uma breve descrição dos projetos realizado
+Segue uma breve descrição dos projetos realizado.
 
 {{% children description="true" %}}
