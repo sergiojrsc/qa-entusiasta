@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Automação da aplicação Swag Lab on QA Entusiasta</title>
+    <link>https://sergiojrsc.github.io/qa-entusiasta/projetos/swaglabs/index.html</link>
+    <description>Recent content in Automação da aplicação Swag Lab on QA Entusiasta</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Mar 2024 09:24:47 -0300</lastBuildDate>
+    <atom:link href="https://sergiojrsc.github.io/qa-entusiasta/projetos/swaglabs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git</title>
+      <link>https://sergiojrsc.github.io/qa-entusiasta/projetos/swaglabs/git/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sergiojrsc.github.io/qa-entusiasta/projetos/swaglabs/git/index.html</guid>
+      <description>Segue uma breve descrição do git. O Git é um sistema de controle de versão distribuído, amplamente utilizado para rastrear as mudanças no código-fonte durante o desenvolvimento de software. Ele foi criado por Linus Torvalds em 2005, inicialmente para o desenvolvimento do kernel do Linux, e desde então se tornou uma ferramenta essencial para desenvolvedores em todo o mundo.
+Em termos simples, o Git permite que várias pessoas trabalhem simultaneamente no mesmo projeto, mantendo o controle de todas as alterações feitas ao código.</description>
+    </item>
+    <item>
+      <title>CodeceptJS</title>
+      <link>https://sergiojrsc.github.io/qa-entusiasta/projetos/swaglabs/codeceptjs/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sergiojrsc.github.io/qa-entusiasta/projetos/swaglabs/codeceptjs/index.html</guid>
+      <description>Breve descrição sobre CodeceptJS O CodeceptJS é um framework de teste de aceitação e de sistema end-to-end para JavaScript. Ele é projetado para simplificar a escrita e execução de testes automatizados para aplicativos da web, especialmente para aplicativos baseados em navegadores.
+Para acessar a pagina inicial click no link
+E vou utilizar a versão webdriverIO do codeceptjs, para acessar a doc click no link
+Pré requisitos Ter o node instalado Utilizei a versão v20.</description>
+    </item>
+  </channel>
+</rss>
