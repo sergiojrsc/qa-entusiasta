@@ -1,0 +1,39 @@
+baseURL = 'https://sergiojrsc.github.io/qa-entusiasta/'
+languageCode = 'en-us'
+title = 'QA Entusiasta'
+theme = 'hugo-theme-relearn'
+
+[params]
+  themeVariant = ['zen-light', 'zen-dark']
+  collapsibleMenu = true
+  alwaysopen = false
+  author = "Sérgio Junior Schmitt"
+  titleSeparator = "-"
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 5
+    ordered = false
+  [markup.highlight]
+    style = "rrt" # choose a color theme or create your own
+    guessSyntax = false # if set to true, avoid unstyled code if no language was given but mermaid code fences will not work anymore
+
+[menu]
+[[menu.shortcuts]]
+    name = "<i class='fab fa-linkedin'></i> LinkedIn"
+    url = 'https://www.linkedin.com/in/s%C3%A9rgio-schmitt-33b30248/'
+    weight = 10
+
+[[menu.shortcuts]]
+    identifier = 'ds'
+    name = "<i class='fa-fw fab fa-github'></i> GitHub"
+    url = 'https://github.com/sergiojrsc'
+    weight = 20
+
+[[menu.shortcuts]]
+    name = "<i class='fab fa-gitlab'></i> GitLab"
+    url = 'https://gitlab.com/sergiojrsc'
+    weight = 30
+
+
