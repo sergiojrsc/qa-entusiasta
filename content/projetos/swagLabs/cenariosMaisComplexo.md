@@ -26,7 +26,7 @@ Segue os usuários que vão ser utilizados:
 
 Logo abaixo mais detalhes sobre a execução de cada passo.
 
-### Primeiro passo configurar o expect
+### Primeiro passo: configurar o ***expect***
 
 O "Expect.js" é uma biblioteca de código aberto escrita em JavaScript para testes de unidade e TDD (Desenvolvimento Orientado a Testes) em aplicativos JavaScript. Ele é usado principalmente no desenvolvimento de software para automatizar e simplificar o processo de teste.
 
@@ -73,7 +73,7 @@ Then ('a quantidade de produtos adicionado no carrinho deve ser a mesma quantida
   * `quantityAddToCart`: Variável onde foi armazenada a quantidade que foi adicionada ao carrinho.
   * `.to.equal(quantityProduct.length)`: Este é o método de asserção **.to.equal(...)**, que verifica se o valor **quantityAddToCart** é igual ao comprimento (length) de **quantityProduct**. Se forem iguais, o teste passa, caso contrário, o teste falha.
 
-### Segundo passo configurar o loadsh
+### Segundo passo: configurar o ***loadsh***
 
 Lodash é uma biblioteca JavaScript de utilitários que simplifica a manipulação de dados em JavaScript. Ela fornece funções de utilitário para trabalhar com arrays, objetos, strings, funções, e mais, de forma consistente e eficiente em termos de desempenho.
 
@@ -115,7 +115,7 @@ Then ('a quantidade de produtos adicionado no carrinho deve ser a mesma quantida
   * `_.toNumber`: Esta é uma função do Lodash que converte o valor passado para um número. O _ é uma convenção comum usada para importar o Lodash.
   * `await productsPage.getNumberProductAddToCart()`: Função onde vai pegar o valor que mostra quantos produtos foram adicionados no carrinho
 
-### Terceiro passo lógica no step
+### Terceiro passo: lógica no step
 Dentro do steps podemos utilizar algumas lógicas do tipo for, if, entre outras para fazer as validações necessárias que precisamos.
 
 Segue um exemplo de como foi utilizado:
@@ -137,7 +137,7 @@ Given ('adicionar todos os produtos no carrinho', async()=>{
     * `await productsPage.clickAddToCartProduct(listNameProducts[key])`: Método criado para clicar no botão de adicionar no carrinho, quando informado o nome de um produto
   
 
-## Quarto passo esquema do cenário
+## Quarto passo: esquema do cenário
 Adicionado o esquema de cenário para fazer a repetição do mesmo cenário com dois usuários diferentes, como a aplicação disponibiliza um usuário com problema e um que funciona, vou utilizar o esquema do cenário para passar o usuário com problema no mesmo cenário para demonstrar como seria exibido o erro caso tenha erro.
 
 Segue um exemplo de como foi utilizado:

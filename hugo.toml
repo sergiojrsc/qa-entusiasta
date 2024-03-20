@@ -14,16 +14,7 @@ theme = 'hugo-theme-relearn'
   disableToc = true
   disableNextPrev = true
   disableBreadcrumb = true
-  
-
-[markup]
-  [markup.tableOfContents]
-    startLevel = 2
-    endLevel = 5
-    ordered = false
-  [markup.highlight]
-    style = "rrt" # choose a color theme or create your own
-    guessSyntax = false # if set to true, avoid unstyled code if no language was given but mermaid code fences will not work anymore
+  disableSearch = true
 
 [menu]
 [[menu.shortcuts]]
@@ -42,4 +33,5 @@ theme = 'hugo-theme-relearn'
     url = 'https://gitlab.com/sergiojrsc'
     weight = 30
 
-
+[markup.goldmark.renderer]
+    unsafe = true

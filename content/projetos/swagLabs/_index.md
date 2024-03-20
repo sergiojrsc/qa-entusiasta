@@ -2,6 +2,7 @@
 title = " "
 linktitle = "Automação da aplicação Swag Lab"
 ordersectionsby = "title"
+description = "Automação da aplicação Swag Lab: Este projeto tem como objetivo demonstrar meu conhecimento em testes automatizados e ficar como uma documentação do que estou aprendendo. Escolhi automatizar o Swag Labs, por ser um aplicação web que possui várias funcionalidades básicas e que já iria proporcionar explorar um conhecimento muito interessante."
 +++
 
 # Automação da aplicação Swag Lab
@@ -15,12 +16,15 @@ Escolhi o framework CodeceptJS, pois foi o último framework que trabalhei e ach
 
 Conforme eu for aprendendo novos recursos, vou estar adicionando no checklist e criando versões específicas de cada situação com o seu readme, contendo os passos que aprendi.
 
+Segue o link do repositório no [GitLab <i class='fab fa-gitlab'></i> ](https://gitlab.com/sergiojrsc/projeto-cv)
+
+
 ## Principais objetivos do projeto com seus respectivas tags
 - [X] [Comandos do git que serão utilizados](./git.md) tag `criando-diretorio`
-- [X] [Aprender a configurar o framework CodeceptJS](./Readme/codeceptJS.md) tag `configurando-codeceptJS`
-- [X] [Utilizar o conceito de Gherkin](./Readme/gherkin.md) tag `configurando-gherkin`
-- [x] [Utilizar o conceito de Page Object](./Readme/pageObject.md) tag `configurando-pageObject`
-- [X] [Criando um cenário mais completo utilizando algumas funcionalidades a mais como:](./Readme/loadsh-expect-esquemaDeCenario-logicaPageObject.md) tag `loadsh-expect-esquemaDeCenario-logicaPageObject`
+- [X] [Aprender a configurar o framework CodeceptJS](./codeceptjs.md) tag `configurando-codeceptJS`
+- [X] [Utilizar o conceito de Gherkin](./gherkin.md) tag `configurando-gherkin`
+- [x] [Utilizar o conceito de Page Object](./pageObject.md) tag `configurando-pageObject`
+- [X] [Criando um cenário mais completo utilizando algumas funcionalidades a mais como:](./cenariosMaisComplexo.md) tag `loadsh-expect-esquemaDeCenario-logicaPageObject`
   - [X] Loadsh
   - [X] Expect
   - [x] Esquema de cenário do gherkin

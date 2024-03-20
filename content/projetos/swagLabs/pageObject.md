@@ -23,7 +23,7 @@ Para acessar a pagina de docs click no [link](https://codecept.io/pageobjects/)
 
 Logo abaixo mais detalhes sobre a execução de cada passo.
 
-### Primeiro passo montar a estrutura que vou utilizar e explicar
+### Primeiro passo: montar a estrutura que vou utilizar e explicar
 
 Segue um modelo da estrutura que irei utilizar:
 ```
@@ -54,7 +54,7 @@ Segue um modelo da estrutura que irei utilizar:
   * `steps`: Diretório onde será criado todos os arquivos `.step.js` do projeto
   * `pages`: Diretório onde será criado todos os arquivos `.page.js` do projeto
 
-### Segundo passo configurar o arquivo `codecept.conf.js`
+### Segundo passo: configurar o arquivo ***codecept.conf.js***
 
  Dentro do arquivo `codecept.conf.js` na etapa onde possui informações do gherkin alterar o caminho do steps para ficar de acordo com a estrutura proposta no projeto.
   ```
@@ -66,7 +66,7 @@ Segue um modelo da estrutura que irei utilizar:
   },
   ```
 
-### Terceiro passo configurar todos os arquivos `features`, `steps` e `pages`
+### Terceiro passo: configurar todos os arquivos ***features***, ***steps*** e ***pages***
 
 Dentro da pasta `features`, alterei o nome do arquivo `basic.feature` para `login.feature`, para ficar mais legível que dentro desse arquivo vai conter todos os cenários referente ao login.
 

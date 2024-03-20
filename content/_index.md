@@ -9,7 +9,7 @@ A ideia de criar essa página surgiu em uma conversa 1:1 com um líder técnico,
 
 
 # Estudos 
-- [X] [CodeceptJS](../docs/codeceptjs.md)
+- [X] [Automação da página Swag Labs com CodeceptJS](../projetos/swaglabs/_index.md)
 - [ ] Docker
 - [ ] CI/CD
 - [ ] Automação API

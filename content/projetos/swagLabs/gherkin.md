@@ -27,8 +27,8 @@ Para acessar a pagina de docs click no [link](https://cucumber.io/docs/gherkin/r
 
 Logo abaixo mais detalhes sobre a execução de cada passo.
 
-### Primeiro passo executar o comando `npx codeceptjs gherkin:init` para criar o arquivo package.json
-* O comando npx codeceptjs gherkin:init é usado para inicializar um projeto CodeceptJS com suporte a Gherkin. Aqui está o que esse comando faz:
+### Primeiro passo: executar o comando ***npx codeceptjs gherkin:init*** para criar o arquivo ***package.json***
+* O comando `npx codeceptjs gherkin:init` é usado para inicializar um projeto CodeceptJS com suporte a Gherkin. Aqui está o que esse comando faz:
 
   * npx: é um utilitário do Node.js que permite executar pacotes do npm que não estão instalados globalmente. Ele baixa temporariamente o pacote necessário, executa o comando e, em seguida, o remove.
 
@@ -87,8 +87,8 @@ Ao executar esse comando o projeto irá sofrer as seguintes alterações:
   ],
   tests: './*_test.js',
   ```
-### Segundo passo adicionar as informações nos arquivos `basic.feature` e `steps.js`
 
+### Segundo passo: adicionar as informações nos arquivos ***basic.feature*** e ***steps.js***
 
 * No arquivo `basic.feature`basic.feature vamos criar a feature de login que já está funcionando no formato do Gherkin:
   ```
@@ -132,12 +132,12 @@ Ao executar esse comando o projeto irá sofrer as seguintes alterações:
     I.seeTextEquals(page,'//span[@class="title"]');
   });
   ```
-### Terceiro passo excluir um arquivo que não está mais sendo utilizado
+### Terceiro passo: excluir um arquivo que não está mais sendo utilizado
 * Como vou querer só executar os cenários do gherkin o arquivo `login_test.js` pode ser excluído
 * Dentro do arquivo `codecept.conf.js` podemos excluir o trecho que contém o código `tests: './*_test.js',`
 
 
-### Quarto passo configurar para entender os comandos do gherkin em português
+### Quarto passo: configurar para entender os comandos do gherkin em português
 * No início de cada arquivo .feature colocar o seguinte comando `# language:pt`, com isso o gherkin já irá conseguir entender normalmente
   ```
   # language:pt
@@ -155,5 +155,5 @@ Ao executar esse comando o projeto irá sofrer as seguintes alterações:
   ```
 * Para entender como é o de/para consultar a documentação no [link](https://cucumber.io/docs/gherkin/languages/) procurando pela lingua que deseja utilizar
 
-### Quinto passo executar o teste
+### Quinto passo: executar o teste
 * Executar os testes com o comando `npx codeceptjs run` para verificar se está passando sem nenhum problema.
