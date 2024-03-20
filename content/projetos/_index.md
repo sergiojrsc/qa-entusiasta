@@ -1,10 +1,11 @@
 +++
-title = "Projetos"
+title = " "
+linktitle = "Projetos"
 ordersectionsby = "title"
 weight = 2
 +++
+# Projetos
 
-
-Segue uma breve descrição dos projetos realizado.
+Segue uma breve descrição dos projetos realizados.
 
 {{% children description="true" %}}

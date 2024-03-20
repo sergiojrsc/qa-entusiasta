@@ -3,12 +3,18 @@ languageCode = 'en-us'
 title = 'QA Entusiasta'
 theme = 'hugo-theme-relearn'
 
+
+
 [params]
   themeVariant = ['zen-light', 'zen-dark']
   collapsibleMenu = true
   alwaysopen = false
   author = "Sérgio Junior Schmitt"
-  titleSeparator = "-"
+  titleSeparator = " "
+  disableToc = true
+  disableNextPrev = true
+  disableBreadcrumb = true
+  
 
 [markup]
   [markup.tableOfContents]

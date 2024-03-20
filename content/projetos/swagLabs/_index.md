@@ -1,10 +1,10 @@
 +++
-date = 2024-03-18T09:24:47-03:00
-title = "Automação da aplicação Swag Lab"
+title = " "
 linktitle = "Automação da aplicação Swag Lab"
 ordersectionsby = "title"
 +++
 
+# Automação da aplicação Swag Lab
 Este projeto tem como objetivo demonstrar meu conhecimento em testes automatizados e ficar como uma documentação do que estou aprendendo.
 
 Escolhi automatizar o [Swag Labs](https://www.saucedemo.com/v1/index.html), por ser um aplicação web que possui várias funcionalidades básicas e que já iria proporcionar explorar um conhecimento muito interessante.
@@ -24,7 +24,7 @@ Conforme eu for aprendendo novos recursos, vou estar adicionando no checklist e 
   - [X] Loadsh
   - [X] Expect
   - [x] Esquema de cenário do gherkin
-  - [X] Demonstrando como fica uma logica utilizando a ideia do Page Object
+  - [X] Demonstrando como fica uma lógica utilizando a ideia do Page Object
 - [ ] Configurar o projeto para rodar em docker
 - [ ] Configurar para rodar em CI/CD
 - [ ] Configurar para gerar relatórios dos teste

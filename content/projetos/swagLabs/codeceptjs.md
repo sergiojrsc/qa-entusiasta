@@ -1,8 +1,9 @@
 +++
-title = "CodeceptJS"
+title = " "
+linktitle = "CodeceptJS"
 weight = 20
 +++
-
+# CodeceptJS
 ## Breve descrição sobre CodeceptJS
 
 O CodeceptJS é um framework de teste de aceitação e de sistema end-to-end para JavaScript. Ele é projetado para simplificar a escrita e execução de testes automatizados para aplicativos da web, especialmente para aplicativos baseados em navegadores.

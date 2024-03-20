@@ -1,8 +1,9 @@
 +++
-title = "Git"
+title = " "
+linktitle = "Git"
 weight = 10
 +++
-
+# Git
 ## Segue uma breve descrição do git.
 O Git é um sistema de controle de versão distribuído, amplamente utilizado para rastrear as mudanças no código-fonte durante o desenvolvimento de software. Ele foi criado por Linus Torvalds em 2005, inicialmente para o desenvolvimento do kernel do Linux, e desde então se tornou uma ferramenta essencial para desenvolvedores em todo o mundo.
 
@@ -26,7 +27,7 @@ Para acessar a documentação oficial dos comandos click no [link](https://docs.
     ```
     git status
     ```
-* O comando `git add` é usado para adicionar arquivos ao índice (também conhecido como área de preparação) do Git. Isso significa que você está preparando esses arquivos para serem incluídos no próximo commit. Existem algumas maneiras diferentes de usar o comando git add, dependendo de quais arquivos você deseja adicionar. Aqui esta uma das formas comuns de usar `git add`, esta forma adiciona todos os arquivos modificados e os novos:
+* O comando `git add` é usado para adicionar arquivos ao índice (também conhecido como área de preparação) do Git. Isso significa que você está preparando esses arquivos para serem incluídos no próximo commit. Existem algumas maneiras diferentes de usar o comando git add, dependendo de quais arquivos você deseja adicionar. Aqui está uma das formas comuns de usar `git add`, esta forma adiciona todos os arquivos modificados e os novos:
     ```
     git add .
     ```
@@ -42,7 +43,7 @@ Para acessar a documentação oficial dos comandos click no [link](https://docs.
     ```
     git pull
     ```
-* O comando `git tag` é utilizado para criar, listar, deletar ou verificar tags no repositório Git. As tags são uma forma de marcar commits específicos em um repositório Git como versões específicas ou pontos de interesse, facilitando a referência a eles no futuro. Aqui esta uma da forma de utilizar este comando:
+* O comando `git tag` é utilizado para criar, listar, deletar ou verificar tags no repositório Git. As tags são uma forma de marcar commits específicos em um repositório Git como versões específicas ou pontos de interesse, facilitando a referência a eles no futuro. Aqui está uma da forma de utilizar este comando:
     ```
     git tag <nome da tag>
     ```
@@ -50,7 +51,7 @@ Para acessar a documentação oficial dos comandos click no [link](https://docs.
 Aqui está a explicação dos elementos no comando:
 
   * git push: Este é o comando para enviar alterações do seu repositório local para um repositório remoto.
-  * origin: Este é o nome do repositório remoto. Geralmente, "origin" é o nome padrão atribuído ao repositório remoto quando você clona um repositório.
+  * origin: Este é o nome do repositório remoto. Geralmente, "origin" é o nome padrão atribuído ao repositório remoto quando você clonar um repositório.
   * --tags: Esta é a opção que especifica que todas as tags locais devem ser empurradas para o repositório remoto.
     ```
     git push origin --tags
