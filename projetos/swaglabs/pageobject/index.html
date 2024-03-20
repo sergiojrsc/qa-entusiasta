@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.122.0">
+    <meta name="generator" content="Relearn 5.26.1+tip">
+    <meta name="description" content="">
+    <meta name="author" content="Sérgio Junior Schmitt">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="    QA Entusiasta">
+    <meta name="twitter:description" content="Page Object Page Object é um padrão de design de automação de testes de software usado principalmente em testes de interface do usuário (UI). Ele é utilizado para criar uma abstração da página web ou da interface de usuário de um aplicativo, encapsulando os elementos da página (como botões, campos de texto, links etc.) e as operações que podem ser realizadas nesses elementos.
+A ideia principal por trás do Page Object é separar a lógica de automação dos detalhes da implementação da interface do usuário.">
+    <meta property="og:title" content="    QA Entusiasta">
+    <meta property="og:description" content="Page Object Page Object é um padrão de design de automação de testes de software usado principalmente em testes de interface do usuário (UI). Ele é utilizado para criar uma abstração da página web ou da interface de usuário de um aplicativo, encapsulando os elementos da página (como botões, campos de texto, links etc.) e as operações que podem ser realizadas nesses elementos.
+A ideia principal por trás do Page Object é separar a lógica de automação dos detalhes da implementação da interface do usuário.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sergiojrsc.github.io/qa-entusiasta/projetos/swaglabs/pageobject/index.html">
+    <meta property="article:section" content="    QA Entusiasta">
+    <meta property="og:site_name" content="QA Entusiasta">
+    <title>    QA Entusiasta</title><link rel="icon" href="/qa-entusiasta/images/icon.svg" type="image/svg">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/qa-entusiasta/css/fontawesome-all.min.css?1710941248" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qa-entusiasta/css/fontawesome-all.min.css?1710941248" rel="stylesheet"></noscript>
+    <link href="/qa-entusiasta/css/nucleus.css?1710941248" rel="stylesheet">
+    <link href="/qa-entusiasta/css/auto-complete.css?1710941248" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qa-entusiasta/css/auto-complete.css?1710941248" rel="stylesheet"></noscript>
+    <link href="/qa-entusiasta/css/perfect-scrollbar.min.css?1710941248" rel="stylesheet">
+    <link href="/qa-entusiasta/css/fonts.css?1710941248" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/qa-entusiasta/css/fonts.css?1710941248" rel="stylesheet"></noscript>
+    <link href="/qa-entusiasta/css/theme.css?1710941248" rel="stylesheet">
+    <link href="/qa-entusiasta/css/theme-zen-light.css?1710941248" rel="stylesheet" id="R-variant-style">
+    <link href="/qa-entusiasta/css/chroma-relearn-light.css?1710941248" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/qa-entusiasta/css/variant.css?1710941248" rel="stylesheet">
+    <link href="/qa-entusiasta/css/print.css?1710941248" rel="stylesheet" media="print">
+    <link href="/qa-entusiasta/css/ie.css?1710941248" rel="stylesheet">
+    <script src="/qa-entusiasta/js/url.js?1710941248"></script>
+    <script src="/qa-entusiasta/js/variant.js?1710941248"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.baseUri='..\/..\/..';
+      window.relearn.baseUriFull='https:\/\/sergiojrsc.github.io\/qa-entusiasta';
+      // variant stuff
+      window.relearn.themeVariantModifier='';
+      window.variants && variants.init( [ 'zen-light', 'zen-dark' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/qa-entusiasta/projetos/swaglabs/pageobject/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+          </div>
+          <span class="topbar-breadcrumbs highlightable">
+             
+          </span>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id=""> </h1>
+
+<h1 id="page-object">Page Object</h1>
+<p>Page Object é um padrão de design de automação de testes de software usado principalmente em testes de interface do usuário (UI). Ele é utilizado para criar uma abstração da página web ou da interface de usuário de um aplicativo, encapsulando os elementos da página (como botões, campos de texto, links etc.) e as operações que podem ser realizadas nesses elementos.</p>
+<p>A ideia principal por trás do Page Object é separar a lógica de automação dos detalhes da implementação da interface do usuário. Isso torna o código de automação mais limpo, modular e fácil de manter. Além disso, quando há alterações na interface do usuário, apenas os Page Objects afetados precisam ser atualizados, em vez de modificar o código de automação em vários lugares.</p>
+<p>Para acessar a pagina de docs click no <a href="https://codecept.io/pageobjects/" target="_blank">link</a></p>
+<h2 id="pré-requisitos">Pré requisitos</h2>
+<ul>
+<li>Ter configurado a etapa da tag <code>configurando-codeceptJS</code> <a href="/qa-entusiasta/projetos/swaglabs/codeceptjs/index.html">link</a></li>
+</ul>
+<h2 id="passos-da-configuração">Passos da configuração</h2>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Primeiro passo montar a estrutura que vou utilizar e explicar</li>
+<li><input checked="" disabled="" type="checkbox"> Segundo passo configurar o arquivo <code>codecept.conf.js</code></li>
+<li><input checked="" disabled="" type="checkbox"> Terceiro passo configurar todos os arquivos <code>features</code>, <code>steps</code> e <code>pages</code></li>
+</ul>
+<p>Logo abaixo mais detalhes sobre a execução de cada passo.</p>
+<h3 id="primeiro-passo-montar-a-estrutura-que-vou-utilizar-e-explicar">Primeiro passo: montar a estrutura que vou utilizar e explicar</h3>
+<p>Segue um modelo da estrutura que irei utilizar:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>├─PROJETO-CV
+│   ├──features
+│   └──pages
+│       └──login.page.js   
+│   ├──Readme
+│   │   ├──codeceptJS.md
+│   │   ├──comandosGit.md
+│   │   ├──gherkin.md      
+│   │   └──pageObject.md   
+│   ├──steps
+│   │   └──login.step.js         
+├─.gitignore
+├─codecept.conf.js
+├─jsconfig.json
+├─package-lock.json
+├─package.json
+├─README.md   
+├─steps_file.js
+└─steps.d.ts</code></pre></div><ul>
+<li>Uma breve descrição sobre a estrutura
+<ul>
+<li><code>PROJETO-CV</code>: Raiz do projeto</li>
+<li><code>features</code>: Diretório onde será criado todos os arquivos <code>.feature</code> do projeto</li>
+<li><code>Readme</code>: Diretório onde armazeno todos os readme que estou fazendo do projeto</li>
+<li><code>steps</code>: Diretório onde será criado todos os arquivos <code>.step.js</code> do projeto</li>
+<li><code>pages</code>: Diretório onde será criado todos os arquivos <code>.page.js</code> do projeto</li>
+</ul>
+</li>
+</ul>
+<h3 id="segundo-passo-configurar-o-arquivo-codeceptconfjs">Segundo passo: configurar o arquivo <em><strong>codecept.conf.js</strong></em></h3>
+<p>Dentro do arquivo <code>codecept.conf.js</code> na etapa onde possui informações do gherkin alterar o caminho do steps para ficar de acordo com a estrutura proposta no projeto.</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>hooks: [],
+gherkin: {
+  features: &#39;./features/*.feature&#39;,
+  steps: &#39;./steps/*&#39;
+},</code></pre></div><h3 id="terceiro-passo-configurar-todos-os-arquivos-features-steps-e-pages">Terceiro passo: configurar todos os arquivos <em><strong>features</strong></em>, <em><strong>steps</strong></em> e <em><strong>pages</strong></em></h3>
+<p>Dentro da pasta <code>features</code>, alterei o nome do arquivo <code>basic.feature</code> para <code>login.feature</code>, para ficar mais legível que dentro desse arquivo vai conter todos os cenários referente ao login.</p>
+<p>A pasta <code>step_definitions</code> alterei seu nome para <code>steps</code>, e alterei o arquivo que estava dentro da pasta de <code>steps.js</code> para <code>login.step.js</code>, com o mesmo intuito de ficar mais legível e dentro deste arquivo vai conter todos os steps referente ao login.</p>
+<p>Criada a pasta nova <code>pages</code>, adicionado dentro dessa pasta o arquivo <code>login.page.js</code>, com o mesmo intuito de ficar mais legível e dentro deste arquivo vai conter todos o mapeamento da página referente ao login.</p>
+<p>Segue um exemplo de como fica a estrutura dos arquivos correspondente a cada pasta:</p>
+<ul>
+<li><code>feature</code>, contém a estrutura do gherkin, conforme exemplo:
+<div class="highlight wrap-code"><pre tabindex="0"><code># language:pt
+Funcionalidade: Login
+Como usuário do sistema Swag Labs
+Desejo realizar o login no sistema
+Para realizar minhas tarefas
+
+Cenário: Login com sucesso
+  Dado acesse a pagina &#34;Swag Labs&#34;
+  E informe o usuário &#34;standard_user&#34;
+  E informe a senha &#34;secret_sauce&#34;
+  Quando clico no botão login
+  Então o sistema apresenta a tela de &#34;Products&#34;</code></pre></div></li>
+<li><code>step</code>, contém a estrutura que faz a ligação entre os nomes das steps do gherkin com os métodos criado na page e alguma lógica caso necessário, conforme exemplo:
+<div class="highlight wrap-code"><pre tabindex="0"><code>const loginPage = require(&#39;../pages/login.page&#39;);
+
+Given (&#39;acesse a pagina {string}&#39;, async(page)=&gt;{
+  await loginPage.accessPage(page);
+});
+
+Given (&#39;informe o usuário {string}&#39;, async(user)=&gt;{
+  await loginPage.setUser(user);
+});
+
+Given (&#39;informe a senha {string}&#39;, async(password)=&gt;{
+  await loginPage.setPassword(password);
+});
+
+When (&#39;clico no botão login&#39;, async()=&gt;{
+  await loginPage.clickLogin();
+});
+
+Then (&#39;o sistema apresenta a tela de {string}&#39;, async(page)=&gt;{
+  await loginPage.assertPageTitle(page);
+});</code></pre></div></li>
+<li><code>page</code>, contém exclusivamente o mapeamento da página, as logica fica nos steps, na page apenas a comunicação da pagina e seu retorno, conforme exemplo:
+<div class="highlight wrap-code"><pre tabindex="0"><code>const I = actor();
+
+module.exports = {
+
+  div:{
+    logo:&#39;//div[@class=&#34;login_logo&#34;]&#39;,
+  }, 
+  input:{
+    userName: &#39;//input[@id=&#34;user-name&#34;]&#39;,
+    password: &#39;//input[@id=&#34;password&#34;]&#39;,
+    login:&#39;//input[@id=&#34;login-button&#34;]&#39;
+  },
+  span:{
+    title:&#39;//span[@class=&#34;title&#34;]&#39;
+  },
+
+  accessPage(pageLogo) {
+    I.amOnPage(&#39;/&#39;);
+    I.waitForElement(this.div.logo);
+    I.seeTextEquals(pageLogo, this.div.logo);
+  },
+  setUser(user){
+    I.waitForElement(this.input.userName);
+    I.fillField(this.input.userName,user);
+  },
+  setPassword(password){
+    I.waitForElement(this.input.password);
+    I.fillField(this.input.password,password);
+  },
+  clickLogin(){
+    I.waitForElement(this.input.login);
+    I.click(this.input.login);
+  },
+  assertPageTitle(pageTitle){
+    I.waitForElement(this.span.title);
+    I.seeTextEquals(pageTitle,this.span.title);
+  }
+}</code></pre></div></li>
+</ul>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a id="logo" href="/qa-entusiasta/">
+    <img src="/qa-entusiasta/images/logo.png">
+</a>
+        </div>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/qa-entusiasta/index.html"><i class="fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/qa-entusiasta/sobre/index.html" class=""><a class="padding" href="/qa-entusiasta/sobre/index.html">Sobre</a></li>
+          <li data-nav-id="/qa-entusiasta/projetos/index.html" class="parent "><input type="checkbox" id="R-section-cd7e3fe05412edb727eb4347db902d79" aria-controls="R-subsections-cd7e3fe05412edb727eb4347db902d79" checked><label for="R-section-cd7e3fe05412edb727eb4347db902d79"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Projetos</span></label><a class="padding" href="/qa-entusiasta/projetos/index.html">Projetos</a><ul id="R-subsections-cd7e3fe05412edb727eb4347db902d79" class="morespace collapsible-menu">
+          <li data-nav-id="/qa-entusiasta/projetos/swaglabs/index.html" class="parent "><input type="checkbox" id="R-section-c823a385e2795a52989742a2003151f4" aria-controls="R-subsections-c823a385e2795a52989742a2003151f4" checked><label for="R-section-c823a385e2795a52989742a2003151f4"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Automação da aplicação Swag Lab</span></label><a class="padding" href="/qa-entusiasta/projetos/swaglabs/index.html">Automação da aplicação Swag Lab</a><ul id="R-subsections-c823a385e2795a52989742a2003151f4" class="morespace collapsible-menu">
+          <li data-nav-id="/qa-entusiasta/projetos/swaglabs/git/index.html" class=""><a class="padding" href="/qa-entusiasta/projetos/swaglabs/git/index.html">Git</a></li>
+          <li data-nav-id="/qa-entusiasta/projetos/swaglabs/codeceptjs/index.html" class=""><a class="padding" href="/qa-entusiasta/projetos/swaglabs/codeceptjs/index.html">CodeceptJS</a></li>
+          <li data-nav-id="/qa-entusiasta/projetos/swaglabs/gherkin/index.html" class=""><a class="padding" href="/qa-entusiasta/projetos/swaglabs/gherkin/index.html">Gherkin</a></li>
+          <li data-nav-id="/qa-entusiasta/projetos/swaglabs/pageobject/index.html" class="active"><a class="padding" href="/qa-entusiasta/projetos/swaglabs/pageobject/index.html">Page Object</a></li>
+          <li data-nav-id="/qa-entusiasta/projetos/swaglabs/cenariosmaiscomplexo/index.html" class=""><a class="padding" href="/qa-entusiasta/projetos/swaglabs/cenariosmaiscomplexo/index.html">Cenário mais complexo</a></li></ul></li></ul></li>
+          </ul>
+        </div>
+        <div id="R-shortcuts">
+          <div class="nav-title padding">Links</div>
+          <ul class="space">
+            <li><a class="padding" href="https://www.linkedin.com/in/s%C3%A9rgio-schmitt-33b30248/"><i class='fab fa-linkedin'></i> LinkedIn</a></li>
+            <li><a class="padding" href="https://github.com/sergiojrsc"><i class='fa-fw fab fa-github'></i> GitHub</a></li>
+            <li><a class="padding" href="https://gitlab.com/sergiojrsc"><i class='fab fa-gitlab'></i> GitLab</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-zen-light" value="zen-light" selected>Zen Light</option>
+                      <option id="R-select-variant-zen-dark" value="zen-dark">Zen Dark</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter"><p>Sérgio Junior Schmitt</p>
+
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/qa-entusiasta/js/clipboard.min.js?1710941248" defer></script>
+    <script src="/qa-entusiasta/js/perfect-scrollbar.min.js?1710941248" defer></script>
+    <script src="/qa-entusiasta/js/theme.js?1710941248" defer></script>
+  </body>
+</html>

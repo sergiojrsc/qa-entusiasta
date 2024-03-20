@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>  on QA Entusiasta</title>
+    <link>https://sergiojrsc.github.io/qa-entusiasta/projetos/swaglabs/index.html</link>
+    <description>Recent content in   on QA Entusiasta</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://sergiojrsc.github.io/qa-entusiasta/projetos/swaglabs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> </title>
+      <link>https://sergiojrsc.github.io/qa-entusiasta/projetos/swaglabs/git/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sergiojrsc.github.io/qa-entusiasta/projetos/swaglabs/git/index.html</guid>
+      <description>Git Segue uma breve descrição do git. O Git é um sistema de controle de versão distribuído, amplamente utilizado para rastrear as mudanças no código-fonte durante o desenvolvimento de software. Ele foi criado por Linus Torvalds em 2005, inicialmente para o desenvolvimento do kernel do Linux, e desde então se tornou uma ferramenta essencial para desenvolvedores em todo o mundo.
+Em termos simples, o Git permite que várias pessoas trabalhem simultaneamente no mesmo projeto, mantendo o controle de todas as alterações feitas ao código.</description>
+    </item>
+    <item>
+      <title> </title>
+      <link>https://sergiojrsc.github.io/qa-entusiasta/projetos/swaglabs/codeceptjs/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sergiojrsc.github.io/qa-entusiasta/projetos/swaglabs/codeceptjs/index.html</guid>
+      <description>CodeceptJS Breve descrição sobre CodeceptJS O CodeceptJS é um framework de teste de aceitação e de sistema end-to-end para JavaScript. Ele é projetado para simplificar a escrita e execução de testes automatizados para aplicativos da web, especialmente para aplicativos baseados em navegadores.
+Para acessar a pagina inicial click no link
+E vou utilizar a versão webdriverIO do codeceptjs, para acessar a doc click no link
+Pré requisitos Ter o node instalado Utilizei a versão v20.</description>
+    </item>
+    <item>
+      <title> </title>
+      <link>https://sergiojrsc.github.io/qa-entusiasta/projetos/swaglabs/gherkin/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sergiojrsc.github.io/qa-entusiasta/projetos/swaglabs/gherkin/index.html</guid>
+      <description>Gherkin Gherkin é uma linguagem de especificação utilizada para descrever o comportamento esperado de um software, principalmente em testes de aceitação e desenvolvimento orientado a comportamento (BDD - Behavior Driven Development). É uma linguagem simples e legível que permite aos desenvolvedores, testadores e stakeholders expressarem os requisitos do software de uma forma estruturada e compreensível por todos os envolvidos no projeto.
+As especificações escritas em Gherkin seguem uma sintaxe padronizada, utilizando palavras-chave como &amp;ldquo;Dado&amp;rdquo; (Given), &amp;ldquo;Quando&amp;rdquo; (When), &amp;ldquo;Então&amp;rdquo; (Then) e outras para descrever o comportamento do sistema em diferentes cenários.</description>
+    </item>
+    <item>
+      <title> </title>
+      <link>https://sergiojrsc.github.io/qa-entusiasta/projetos/swaglabs/pageobject/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sergiojrsc.github.io/qa-entusiasta/projetos/swaglabs/pageobject/index.html</guid>
+      <description>Page Object Page Object é um padrão de design de automação de testes de software usado principalmente em testes de interface do usuário (UI). Ele é utilizado para criar uma abstração da página web ou da interface de usuário de um aplicativo, encapsulando os elementos da página (como botões, campos de texto, links etc.) e as operações que podem ser realizadas nesses elementos.
+A ideia principal por trás do Page Object é separar a lógica de automação dos detalhes da implementação da interface do usuário.</description>
+    </item>
+    <item>
+      <title> </title>
+      <link>https://sergiojrsc.github.io/qa-entusiasta/projetos/swaglabs/cenariosmaiscomplexo/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sergiojrsc.github.io/qa-entusiasta/projetos/swaglabs/cenariosmaiscomplexo/index.html</guid>
+      <description>Criando um cenário mais complexo utilizando algumas funcionalidades Criar um cenário um pouco mais complexo para demonstrar o uso de algumas funcionalidades que vai auxiliar na automação.
+O intuito é criar um cenário onde clique em todos os produtos para serem adicionados no carrinho. Ao fazer este teste na página Swag Labs, podemos verificar o cenário funcionando e simular o mesmo cenário com problema, alterando apenas o usuário.
+Segue os usuários que vão ser utilizados:</description>
+    </item>
+  </channel>
+</rss>
