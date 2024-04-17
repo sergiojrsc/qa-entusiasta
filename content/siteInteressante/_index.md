@@ -19,4 +19,6 @@ Publiquei no dia 16/04/2024, conteúdo retirado do post do [linkedIn:](https://w
 
 - LeetCode: https://leetcode.com/ - Embora seja mais conhecido por seus desafios de programação para desenvolvedores, o LeetCode também oferece uma variedade de problemas e questões relacionadas ao teste de software. Os problemas de algoritmos e estruturas de dados podem ajudar os profissionais de QA a aprimorar suas habilidades de resolução de problemas e lógica, que são fundamentais para identificar e solucionar problemas de qualidade de software.
 
-![teste de um gif](../../images/Gravação-de-tela-de-16-04-2024-11_51_03.gif)
+![teste de um gif](Gravação-de-tela-de-16-04-2024-11_51_03.gif)
+
+![teste de um gif](/qa-entusiasta/images/Gravação-de-tela-de-16-04-2024-11_51_03.gif)
